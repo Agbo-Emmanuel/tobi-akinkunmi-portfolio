@@ -159,13 +159,20 @@ body{
 }
 
 .item_section_image{
-    width: 160px;
-    height: 160px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     background-color: #DBDEE6;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.item_section_image img{
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain;
+    border-radius: 50% !important;
 }
 
 .fa-user{
