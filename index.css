@@ -486,4 +486,12 @@ body{
     .contact_media_container h6{
         font-size: 18px;
     }
+    
+    .item_section_list_container_top img{
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
 }
