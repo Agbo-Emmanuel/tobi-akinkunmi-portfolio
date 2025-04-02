@@ -44,11 +44,12 @@ body{
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.header_logo_body > h3{
+.header_logo_body > a{
     font-family: "Roboto", sans-serif;
     color: #fff;
     font-size: 22px;
     font-weight: 500;
+    text-decoration: none;
 }
 .header_nav_container{
     display: flex;
