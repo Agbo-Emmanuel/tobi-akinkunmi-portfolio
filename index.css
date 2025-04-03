@@ -8,7 +8,7 @@ html{
 }
 body{
     width: 100%;
-    background-color: #457B9D;
+    background-color: #fff;
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
@@ -17,25 +17,25 @@ body{
 .hero_container{
     width: 100%;
     height: max-content;
-    background-color: #457B9D;
+    background-color: #fff;
     position: relative;
-    padding-bottom: 100px;
+    /* padding-bottom: 100px; */
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: sticky;
+    top: 0px;
+    z-index: 9999;
+    box-shadow: 2px 0px 6px 2px rgba(106, 106, 106, 0.302);
 }
 .header_body{
-    width: 90%;
+    width: 100%;
     height: 80px;
-    border-radius: 100px;
-    background-color: #457B9D;
+    background-color: #fff;
     padding: 0px 50px;
-    margin-top: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
-    z-index: 9999;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 0 0 rgba(0, 0, 0, 0);
 }
@@ -46,7 +46,7 @@ body{
 
 .header_logo_body > a{
     font-family: "Roboto", sans-serif;
-    color: #fff;
+    color: #000;
     font-size: 22px;
     font-weight: 500;
     text-decoration: none;
@@ -60,7 +60,7 @@ body{
     font-size: 18px;
     font-family: 'Inter', sans-serif;
     font-weight: 500;
-    color: #fff;
+    color: #000;
     cursor: pointer;
     text-decoration: none;
 }
@@ -68,9 +68,9 @@ body{
 .header_nav_container > a > button{
     width: max-content;
     height: max-content;
-    background-color: #F9FAFB;
+    background-color: #000;
     padding: 12px 26px;
-    color: #000;
+    color: #fff;
     font-size: 18px;
     font-family: 'Inter', sans-serif;
     font-weight: 500;
@@ -143,157 +143,149 @@ body{
     height: max-content;
     display: flex;
     flex-direction: column;
-    gap: 50px;
-    padding: 0px 250px;
-    margin-top: 50px;
 }
 
-.item_section{
+.hero_item_section{
     width: 100%;
     height: max-content;
-    padding: 30px;
-    background-color: #fff;
-    border-radius: 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.item_section_image{
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background-color: #DBDEE6;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.item_section_image img{
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: contain;
-    border-radius: 50% !important;
-}
-
-.fa-user{
-    font-size: 80px;
-    color: #F9FAFB;
-}
-
-.item_section h2{
-    color: #000;
-    font-size: 30px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
-}
-
-.item_section p{
-    color: #000;
-    font-size: 17px;
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 500;
-}
-
-.item_section img{
-    width: 100%;
-    height: 540px;
-    border-radius: 20px;
-}
-
-.item_section_social_link{
-    width: 100%;
-    height: max-content;
-    display: flex;
-    gap: 10px;
-    align-items: center;
-}
-
-.item_section_social_link a{
-    text-decoration: none;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 60px 200px;
     background-color: #457B9D;
-    color: #fff;
-    font-size: 20px;
-}
-
-.item_section_list_container{
-    width: 100%;
-    height: max-content;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
     display: flex;
     flex-direction: column;
-    gap: 6px;
-    margin-top: 10px;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
 }
 
-.item_section_list_container_top{
+.hero_item_section h2{
+    color: #fff;
+    font-size: 34px;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+}
+
+.hero_item_section P{
+    color: #fff;
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.hero_item_button_container{
     width: 100%;
     display: flex;
-    align-items: center;
-    gap: 6px;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
-.item_section_list_container_top img{
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
-    border-radius: 50%;
-}
-
-.item_section_list_container_top p{
-    color: #000;
-    font-size: 16px;
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 600;
-}
-
-.item_section_list_container p{
-    color: #000;
-    font-size: 16px;
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 600;
-}
-
-.item_section_list_container li{
-    color: #000;
-    font-size: 16px;
-    font-family: 'Quicksand', sans-serif;
+.hero_item_button_container a button{
+    width: max-content;
+    height: max-content;
+    padding: 12px 26px;
+    font-size: 14px;
+    font-family: "Inter", sans-serif;
     font-weight: 500;
-    list-style: none;
-    position: relative;
-    padding-left: 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: #000;
+    color: #fff;
 }
 
-.item_section_list_container li::before {
-    content: "•";
-    position: absolute;
-    left: 0;
-    top: 0;
+.hero_item_button_container a:last-child button{
+    background-color: #fff;
+    color: #000;
+}
+
+.about_section{
+    width: 100%;
+    padding: 50px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.about_section h1{
+    color: #000;
+    font-size: 32px;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+}
+
+.about_section p{
     color: #000;
     font-size: 16px;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    line-height: 24px;
 }
+
+.core_competence_section{
+    width: 100%;
+    padding: 40px 50px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 26px;
+    background-color: rgba(211, 211, 211, 0.335);
+}
+
+.core_competence_section h1{
+    color: #000;
+    font-size: 32px;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+}
+
+.core_competence_card_container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.core_competence_card{
+    width: calc((100% / 3) - 20px);
+    height: auto;
+    padding: 20px;
+    background-color: #f6f6f6;
+    border-radius: 6px;
+    border: 1px solid rgba(128, 128, 128, 0.176);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.core_competence_card p{
+    color: #000;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    text-align: center;
+}
+
+
 
 .contact_media_container{
     width: 100%;
-    padding: 50px 0px;
+    padding: 60px 0px;
     display: flex;
     flex-direction: column;
     gap: 20px;
     align-items: center;
-    /* background-color: #030712; */
-    margin-top: 50px;
+    background-color: #457B9D;
 }
 
 .contact_media_container > h3{
     width: max-content;
     height: max-content;
     padding: 12px 30px;
-    border: 1px solid #D1D5DB;
+    border: 1px solid #fff;
     border-radius: 100px;
     color: #fff;
     font-family: "Inter", sans-serif;
@@ -347,7 +339,7 @@ body{
     align-items: center;
     justify-content: center;
     background-color: #fff;
-    color: #457B9D;
+    color: #000;
     font-size: 20px;
 }
 
@@ -459,16 +451,6 @@ body{
         padding: 0px 0px;
     }
     
-    .item_section{
-        padding: 20px 16px;
-        gap: 12px;
-    }
-
-    .item_section img{
-        height: 260px;
-        border-radius: 14px;
-    }
-
     .contact_media_container{
         padding: 20px 16px;
         gap: 20px;
@@ -487,12 +469,25 @@ body{
     .contact_media_container h6{
         font-size: 18px;
     }
+
+    .hero_item_section{
+        padding: 60px 16px;
+    }
+
+    .about_section{
+        padding: 10px 16px;
+    }
+
+    .core_competence_section{
+        padding: 40px 16px 50px;
+    }
     
-    .item_section_list_container_top img{
-        width: 40px;
-        height: 40px;
-        object-fit: cover;
-        border-radius: 50%;
+    .core_competence_section h1{
+        font-size: 28px;
+    }
+    
+    .core_competence_card{
+        width: 100%;
     }
 
 }

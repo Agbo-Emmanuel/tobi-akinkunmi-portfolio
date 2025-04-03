@@ -1,37 +1,37 @@
-window.addEventListener('scroll', () => {
-    const header = document.getElementById('header');
-    const scrollPosition = window.scrollY;
+// window.addEventListener('scroll', () => {
+//     const header = document.getElementById('header');
+//     const scrollPosition = window.scrollY;
 
-    if (scrollPosition > 50) { // Change 50 to the scroll position where you want the effect to trigger
-        header.classList.add('scrolled');
-    } else {
-        header.classList.remove('scrolled');
-    }
-});
-window.addEventListener('scroll', () => {
-    const header = document.getElementById('header_nav_btn');
-    const scrollPosition = window.scrollY;
+//     if (scrollPosition > 50) { // Change 50 to the scroll position where you want the effect to trigger
+//         header.classList.add('scrolled');
+//     } else {
+//         header.classList.remove('scrolled');
+//     }
+// });
+// window.addEventListener('scroll', () => {
+//     const header = document.getElementById('header_nav_btn');
+//     const scrollPosition = window.scrollY;
 
-    if (scrollPosition > 50) { // Change 50 to the scroll position where you want the effect to trigger
-        header.classList.add('scrolled_header_nav_btn');
-    } else {
-        header.classList.remove('scrolled_header_nav_btn');
-    }
-});
+//     if (scrollPosition > 50) { // Change 50 to the scroll position where you want the effect to trigger
+//         header.classList.add('scrolled_header_nav_btn');
+//     } else {
+//         header.classList.remove('scrolled_header_nav_btn');
+//     }
+// });
 
 const headerNavLinks = document.querySelectorAll('.header_nav__link');
 
-window.addEventListener('scroll', () => {
-    const scrollPosition = window.scrollY;
+// window.addEventListener('scroll', () => {
+//     const scrollPosition = window.scrollY;
 
-    headerNavLinks.forEach(link => {
-        if (scrollPosition > 50) {
-            link.classList.add('scrolled_header_nav');
-        } else {
-            link.classList.remove('scrolled_header_nav');
-        }
-    });
-});
+//     headerNavLinks.forEach(link => {
+//         if (scrollPosition > 50) {
+//             link.classList.add('scrolled_header_nav');
+//         } else {
+//             link.classList.remove('scrolled_header_nav');
+//         }
+//     });
+// });
 
 
 
