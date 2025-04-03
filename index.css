@@ -32,7 +32,7 @@ body{
     width: 100%;
     height: 80px;
     background-color: #fff;
-    padding: 0px 50px;
+    padding: 0px 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -204,20 +204,28 @@ body{
 
 .about_section{
     width: 100%;
-    padding: 50px 50px;
+    padding: 50px 80px;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.about_text_container{
+    width: 48%;
     display: flex;
     flex-direction: column;
     gap: 16px;
+    /* background-color: red; */
 }
 
-.about_section h1{
+.about_text_container h1{
     color: #000;
     font-size: 32px;
     font-family: "Inter", sans-serif;
     font-weight: 600;
 }
 
-.about_section p{
+.about_text_container p{
     color: #000;
     font-size: 16px;
     font-family: "Inter", sans-serif;
@@ -225,9 +233,23 @@ body{
     line-height: 24px;
 }
 
+.about_image{
+    width: 48%;
+    height: 420px;
+    background-color: rgb(230, 230, 230);
+    border-radius: 6px;
+}
+
+.about_image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
 .core_competence_section{
     width: 100%;
-    padding: 40px 50px 50px;
+    padding: 40px 80px 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
