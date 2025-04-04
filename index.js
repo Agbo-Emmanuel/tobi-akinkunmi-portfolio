@@ -21,73 +21,6 @@
 
 const headerNavLinks = document.querySelectorAll('.header_nav__link');
 
-// window.addEventListener('scroll', () => {
-//     const scrollPosition = window.scrollY;
-
-//     headerNavLinks.forEach(link => {
-//         if (scrollPosition > 50) {
-//             link.classList.add('scrolled_header_nav');
-//         } else {
-//             link.classList.remove('scrolled_header_nav');
-//         }
-//     });
-// });
-
-
-
-document.addEventListener('DOMContentLoaded', () => {
-    const prevButton = document.querySelector('.prev');
-    const nextButton = document.querySelector('.next');
-    const carouselImages = document.querySelector('.carousel-images');
-    const images = carouselImages.querySelectorAll('img');
-    const imageCount = images.length;
-    let index = 0;
-
-    let startX;
-
-    function updateCarousel() {
-        const offset = -index * 100;
-        carouselImages.style.transform = `translateX(${offset}%)`;
-    }
-
-    function handleSwipe(direction) {
-        if (direction === 'left') {
-            index = (index < imageCount - 1) ? index + 1 : 0;
-        } else if (direction === 'right') {
-            index = (index > 0) ? index - 1 : imageCount - 1;
-        }
-        updateCarousel();
-    }
-
-    prevButton.addEventListener('click', () => {
-        index = (index > 0) ? index - 1 : imageCount - 1;
-        updateCarousel();
-    });
-
-    nextButton.addEventListener('click', () => {
-        index = (index < imageCount - 1) ? index + 1 : 0;
-        updateCarousel();
-    });
-
-    carouselImages.addEventListener('touchstart', (e) => {
-        startX = e.touches[0].clientX;
-    });
-
-    carouselImages.addEventListener('touchend', (e) => {
-        const endX = e.changedTouches[0].clientX;
-        const deltaX = startX - endX;
-
-        if (Math.abs(deltaX) > 30) { // Threshold for swipe distance
-            if (deltaX > 0) {
-                handleSwipe('left');
-            } else {
-                handleSwipe('right');
-            }
-        }
-    });
-});
-
-
 
 const openMenu = document.getElementById('open');
 const closeMenu = document.getElementById('close');
@@ -168,7 +101,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }, { rootMargin: "0px 0px -50px 0px" });
 
-    // Select all elements with the class .fade_in_left
+    // Select all elements with the class .fade_in_up
     const fadeInElements = document.querySelectorAll('.fade_in_up');
     fadeInElements.forEach(element => observer.observe(element));
 });

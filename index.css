@@ -605,7 +605,7 @@ body{
     }
     
     .contact_media_container{
-        padding: 20px 16px;
+        padding: 50px 16px;
         gap: 20px;
     }
 
@@ -710,6 +710,10 @@ body{
     .swiper-button-next,
     .swiper-button-prev{
         display: none;
+    }
+
+    .menu > a{
+        font-size: 18px;
     }
 
 }
