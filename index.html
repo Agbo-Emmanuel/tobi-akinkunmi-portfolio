@@ -6,8 +6,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tenor+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./index.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./index.css"/>
     <title>Tobi Akinkunmi</title>
 </head>
 <body>
@@ -19,8 +23,8 @@
             <div class="header_nav_container">
                 <!-- <a href="#home">HOME</a> -->
                 <a class="header_nav__link" href="#about">About</a>
-                <a class="header_nav__link" href="#skills">Skills</a>
-                <a class="header_nav__link" href="#experience">Experience</a>
+                <a class="header_nav__link" href="#core-competencies">Core Competencies</a>
+                <a class="header_nav__link" href="#projects">Projects</a>
                 <!-- <a class="header_nav__link" href="#work">Work</a> -->
                 <a class="header_nav__link" href="#contact">Contact</a>
                 <a href="./assets/TobiAkinkunmiResume.pdf" download="TobiAkinkunmiResume.pdf">
@@ -32,8 +36,8 @@
             <div class="menu" id="menu">
                 <!-- <a id="home_link" href="#home">HOME</a> -->
                 <a class="close_link" href="#about">About</a>
-                <a class="close_link" href="#skills">Skills</a>
-                <a class="close_link" href="#experience">Experience</a>
+                <a class="close_link" href="#core-competencies">Core Competencies</a>
+                <a class="close_link" href="#projects">Projects</a>
                 <!-- <a class="close_link" href="#work">Work</a> -->
                 <a class="close_link" href="#contact">Contact</a>
                 <a class="close_link" href="./assets/TobiAkinkunmiResume.pdf" download="TobiAkinkunmiResume.pdf">Download Cv</a>
@@ -58,7 +62,7 @@
             </div>
         </div>
 
-        <div class="about_section">
+        <div class="about_section" id="about">
             <div class="about_text_container">
                 <h1>About Me</h1>
                 <p>
@@ -73,7 +77,7 @@
             </div>
         </div>
 
-        <div class="core_competence_section">
+        <div class="core_competence_section" id="core-competencies">
             <h1>Core Competencies</h1>
             <div class="core_competence_card_container">
                 <div class="core_competence_card">
@@ -103,11 +107,110 @@
             </div>
         </div>
 
+        <div class="featured_projects_section" id="projects">
+            <h1>Featured Projects</h1>
+            <div class="projects_card_container">
+                <div class="projects_card">
+                    <div class="projects_card_top">
+                        <img src="./images/nba_logo.jpg" alt=""/>
+                        <h3>NBA All-Star Influencer Campaign 2023</h3>
+                    </div>
+                    <ul class="project_list">
+                        <li>Drove 50% growth in social media following within one week</li>
+                        <li>Generated $2M in estimated media value</li>
+                    </ul>
+                </div>
+                <div class="projects_card">
+                    <div class="projects_card_top">
+                        <img src="./images/lickquor_logo.jpg" alt=""/>
+                        <h3>Lickquor On-Demand Alcohol Platform</h3>
+                    </div>
+                    <ul class="project_list">
+                        <li>Generated $200k+ in gross revenue in 18 months</li>
+                        <li>Achieved 5,000+ orders and 16% increase in conversion rate</li>
+                    </ul>
+                </div>
+                <div class="projects_card">
+                    <div class="projects_card_top">
+                        <img src="./images/umg_logo.jpg" alt=""/>
+                        <h3>Universal Music Artist Rollouts</h3>
+                    </div>
+                    <ul class="project_list">
+                        <li>20M+ streams for Tekno's album; 5M+ streams for Peaches Remix</li>
+                        <li>160k+ ad clicks and global artist visibility</li>
+                    </ul>
+                </div>
+                <div class="projects_card">
+                    <div class="projects_card_top">
+                        <img src="./images/gtbank_logo.jpg" alt=""/>
+                        <h3>GTBank Fashion Weekend 2019</h3>
+                    </div>
+                    <ul class="project_list">
+                        <li>8M+ impressions and 500k+ engagements via social media</li>
+                        <li>15% YoY increase in event attendance</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
+        <div class="image_carousel_body">
+            <div class="swiper project_image_carousel_section">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./images/carousel_image_one.jpg" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./images/carousel_image_two.jpg" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./images/carousel_image_three.jpg" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./images/carousel_image_four.jpg" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./images/carousel_image_five.jpg" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./images/carousel_image_six.jpg" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./images/carousel_image_seven.jpg" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./images/carousel_image_eight.jpg" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./images/carousel_image_nine.jpg" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./images/carousel_image_ten.jpg" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./images/carousel_image_eleven.jpg" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./images/carousel_image_13.jpg" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./images/carousel_image_14.jpg" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./images/carousel_image_15.jpg" alt="" />
+                  </div>
+                </div>
+            
+                <!-- Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+            <!-- Navigation buttons -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
 
         <div class="contact_media_container" id="contact">
-            <h3>Get in touch</h3>
-            <h6>What’s next? Feel free to reach out to me </h6>
+            <h3>Let's Connect</h3>
+            <h6>Open to global marketing leadership roles. Reach out if you're looking  for bold strategies and measurable growth.</h6>
             <div class="media_container">
                 <a href="mailto:toakinkunmi@gmail.com">
                     <i class="fa-regular fa-envelope"></i>
@@ -129,5 +232,28 @@
     </div>
 
     <script src="index.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Swiper Initialization -->
+    <script>
+      const swiper = new Swiper(".swiper", {
+        loop: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        grabCursor: true,
+      });
+    </script>
+
 </body>
 </html>
