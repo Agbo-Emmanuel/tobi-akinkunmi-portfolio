@@ -235,7 +235,7 @@ body{
 
 .about_image{
     width: 48%;
-    height: 460px;
+    height: 380px;
     background-color: rgb(230, 230, 230);
     border-radius: 6px;
 }
@@ -373,7 +373,7 @@ body{
 }
 
 .swiper{
-    width: 800px !important;
+    width: 760px !important;
     height: 600px;
     border-radius: 6px;
 }
@@ -392,11 +392,12 @@ body{
     bottom: 0;
     left: 0;
     width: 50%;
-    height: 70px;
+    height: 60px;
     padding: 20px 16px;
     background-color: lightgrey;
     display: flex;
     align-items: center;
+    border-top-right-radius: 6px;
 }
 
 .image_carousel_tag_container p{
@@ -409,7 +410,7 @@ body{
 .swiper-slide img{
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
   /* Customize navigation buttons */
@@ -429,10 +430,10 @@ body{
 }
 
 .swiper-button-next{
-    right: 180px !important;
+    right: 260px !important;
 }
 .swiper-button-prev{
-    left: 180px !important;
+    left: 260px !important;
 }
 
   /* Customize pagination */
