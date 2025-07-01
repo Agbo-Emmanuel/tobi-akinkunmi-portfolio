@@ -148,7 +148,7 @@ body{
 .hero_item_section{
     width: 100%;
     height: max-content;
-    padding: 60px 200px;
+    padding: 100px 200px;
     background-color: #457B9D;
     border-bottom-right-radius: 30px;
     border-bottom-left-radius: 30px;
@@ -593,6 +593,12 @@ body{
     border-radius: 6px;
     box-shadow: 0 0 4px 1px rgba(211, 211, 211, 0.618);
     text-decoration: none;
+    transform: scale(1);
+    transition: all 350ms ease-in-out;
+}
+
+.major_campaign_item_card:hover{
+    transform: scale(1.1);
 }
 
 .major_campaign_item_image{
