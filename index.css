@@ -899,4 +899,9 @@ body{
         width: 100%;
     }
 
+    .project_detail_back_btn{
+        top: 90px;
+        left: 16px;
+    }
+
 }
