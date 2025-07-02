@@ -620,8 +620,7 @@ body{
     position: relative;
 }
 
-.major_campaign_item_card:after{
-    content: "View more";
+.overlay{
     position: absolute;
     top: 0;
     left: 0;
@@ -631,13 +630,20 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 20px;
-    color: blue;
-    visibility: hidden;
     border-radius: 6px;
+    visibility: hidden;
 }
 
-.major_campaign_item_card:hover:after{
+.overlay p{
+    width: max-content;
+    padding: 14px !important;
+    background-color: lightgrey;
+    color: #000;
+    font-size: 14px !important;
+    border-radius: 100px;
+}
+
+.major_campaign_item_card:hover .overlay{
     visibility: visible;
 }
 
