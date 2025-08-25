@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tobi Akinkunmi Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://unpkg.com/lucide-static/font/lucide.css"
+      rel="stylesheet"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,275 +23,326 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="./index.css" />
-    <title>nba</title>
   </head>
   <body>
-    <div class="hero_container">
-      <div class="header_body" id="header">
-        <div class="header_logo_body">
-          <a href="/" class="header_nav__link">Tobi Akinkunmi</a>
-        </div>
-        <div class="header_nav_container">
-          <!-- <a href="#home">HOME</a> -->
-          <a class="header_nav__link" href="#about">About</a>
-          <a class="header_nav__link" href="#core-competencies"
-            >Core Competencies</a
-          >
-          <a class="header_nav__link" href="#projects">Projects</a>
-          <!-- <a class="header_nav__link" href="#work">Work</a> -->
-          <a class="header_nav__link" href="#contact">Contact</a>
-          <a
-            href="./assets/TobiAkinkunmiResume.pdf"
-            download="TobiAkinkunmiResume.pdf"
-          >
-            <button id="header_nav_btn">Download Resume</button>
-          </a>
-        </div>
-        <div class="menu_container" id="open">
-          <i class="fa-solid fa-bars menu_icon"></i>
-        </div>
-        <div class="menu_container" id="close" style="display: none">
-          <i class="fa-solid fa-xmark menu_icon"></i>
-        </div>
-        <div class="menu" id="menu">
-          <!-- <a id="home_link" href="#home">HOME</a> -->
-          <a class="close_link" href="#about">About</a>
-          <a class="close_link" href="#core-competencies">Core Competencies</a>
-          <a class="close_link" href="#projects">Projects</a>
-          <!-- <a class="close_link" href="#work">Work</a> -->
-          <a class="close_link" href="#contact">Contact</a>
-          <a
-            class="close_link"
-            href="./assets/TobiAkinkunmiResume.pdf"
-            download="TobiAkinkunmiResume.pdf"
-            >Download Resume</a
-          >
-        </div>
-      </div>
-    </div>
-    <div class="body_item">
-      <div
-        class="hero_item_section"
-        id="home"
-        style="
-          background: linear-gradient(#0000008a, #000),
-            url('./images/nba_logo.jpg');
-        "
+    <!-- <header
+      class="sticky top-0 z-40 backdrop-blur bg-white/70 border-b border-slate-100"
+    >
+      <nav
+        class="mx-auto max-w-7xl px-6 py-4 flex items-center justify-between"
       >
-        <h2 class="fade_up">NBA All-Star Influencer Campaign 2023</h2>
-        <!-- <p class="fade_up">
-                <strong>MULTI-CHANNEL MARKETING & COMMUNICATIONS STRATEGIST | GROWTH & BRAND ENGAGEMENT</strong><br/>
-                Strategic and data-driven marketer with 8+ years of experience across finance, entertainment, and sports.
-                Proven success  in audience engagement, campaign leadership, and digital transformation to drive measurable business impact.
-            </p> -->
-        <!-- <div class="hero_item_button_container fade_up">
-                <a href="./assets/TobiAkinkunmiResume.pdf" download="TobiAkinkunmiResume.pdf">
-                    <button>Download resume</button>
-                </a>
-                <a href="#contact">
-                    <button>Get in Touch</button>
-                </a>
-            </div> -->
-        <button class="project_detail_back_btn">
-          <a href="/"
-            ><i class="fa-solid fa-arrow-left" style="color: #fff"></i
-          ></a>
+        <a href="/index.html" class="flex items-center gap-3">
+          <div class="h-7 w-7 rounded-xl bg-[#000080]"></div>
+          <span class="font-semibold tracking-tight">Tobi Akinkunmi</span>
+        </a>
+        <ul class="hidden md:flex items-center gap-8 text-sm">
+          <li><a href="#about" class="hover:opacity-70">About</a></li>
+          <li><a href="#work" class="hover:opacity-70">Work</a></li>
+          <li>
+            <a href="#testimonials" class="hover:opacity-70">Testimonials</a>
+          </li>
+          <li><a href="#contact" class="hover:opacity-70">Contact</a></li>
+        </ul>
+        <div class="flex items-center gap-3">
+          <a
+            href="./assets/TobiAkinkunmiResume.pdf"
+            download="TobiAkinkunmiResume.pdf"
+            class="hidden sm:inline-block"
+          >
+            <button
+              class="bg-[#000080] text-white px-4 py-2 rounded-2xl hover:bg-blue-700"
+            >
+              Download Resume
+            </button>
+          </a>
+          <a href="#intro-video">
+            <button
+              class="border px-4 py-2 rounded-2xl flex items-center gap-2 hover:bg-slate-50"
+            >
+              <i data-lucide="play-circle" class="w-4 h-4"></i> Intro
+            </button>
+          </a>
+        </div>
+      </nav>
+    </header> -->
+    <!-- Hero Section -->
+    <section
+      id="home"
+      class="relative h-96 flex items-center justify-center text-center text-white"
+      style="
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 1)),
+          url('./images/nba_logo.jpg') center/cover no-repeat;
+      "
+    >
+      <h2 class="text-3xl md:text-4xl font-bold animate-fade-up">
+        NBA All-Star Influencer Campaign 2023
+      </h2>
+      <a href="/" class="absolute top-4 left-4">
+        <button
+          class="bg-black/40 hover:bg-black/60 text-white px-3 py-2 rounded-full"
+        >
+          <i class="fa-solid fa-arrow-left"></i>
         </button>
-      </div>
+      </a>
+    </section>
 
-      <div class="major_campaign_detail_body">
-        <div class="major_campaign_item">
-          <h3>Overview</h3>
-          <p>
-            As the Marketing & Communications Lead for the NBA in Nigeria, I was
-            responsible for spearheading strategic initiatives that enhanced
-            brand engagement, digital growth, and cross-platform storytelling.
-            My role focused on increasing visibility and fan interaction for the
-            NBA All-Star 2023 campaign, managing digital and media partnerships,
-            and promoting NBA digital assets such as NBA ID.
-          </p>
-        </div>
-        <div class="major_campaign_item">
-          <h3>Strategy & Execution</h3>
-          <ul>
-            <li>
-              Launched targeted acquisition campaigns across Instagram, Twitter,
-              and YouTube, resulting in dynamic storytelling and viral content
-              loops.
-            </li>
-            <li>
-              Partnered with local influencers and sports personalities to
-              amplify fan-driven content.
-            </li>
-            <li>
-              Developed a retention-focused CX plan centered on push
-              notifications, personalized email journeys, and in-app fan
-              rewards.
-            </li>
-            <li>
-              Orchestrated high-impact brand activations at key events such as
-              the 2023 NBA All-Star Weekend watch party.
-            </li>
-            <li>
-              Secured sponsorships with regional brands to extend campaign
-              reach, including collaborative merchandise drops and co-branded
-              digital content.
-            </li>
-            <li>
-              Deployed analytics dashboards to track campaign performance in
-              real-time.
-            </li>
-          </ul>
-        </div>
-        <div class="major_campaign_item">
-          <h3>Results</h3>
-          <ul>
-            <li>
-              50% increase in social media followers, driven by consistent
-              content cadence and influencer partnerships.
-            </li>
-            <li>
-              $2M estimated media value generated from the 2023 NBA All-Star
-              Campaign.
-            </li>
-            <li>
-              15% growth in engagement and viewership in Q1 2023 through CX and
-              content personalization strategies.
-            </li>
-            <li>
-              20% rise in media placements across local press and sports
-              channels through high-impact PR and brand activations.
-            </li>
-            <li>
-              15% increase in NBA ID digital subscriptions, with improved funnel
-              conversion post-campaign.
-            </li>
-          </ul>
-        </div>
-        <div class="major_campaign_item">
-          <div class="major_campaign_item_image_container">
-            <a
-              href="https://www.thisdaystyle.ng/nba-nigeria-collaborates-with-dennis-osadebe-for-the-2nd-edition-of-nba-meets-art/"
-              target="_blank"
-              class="major_campaign_item_card"
-            >
-              <div class="major_campaign_item_image">
-                <img src="./images/nba_first_news.jpg" alt="" />
-              </div>
-              <p>
-                NBA Nigeria Collaborates With Dennis Osadebe for the 2nd Edition
-                of NBA Meets Art
-              </p>
-              <div class="overlay">
-                <p>view more</p>
-              </div>
-            </a>
-            <a
-              href="https://www.zikoko.com/pop/nba-meets-art-continues-to-take-basketball-beyond-the-court/"
-              target="_blank"
-              class="major_campaign_item_card"
-            >
-              <div class="major_campaign_item_image">
-                <img src="./images/nba_second_news.jpg" alt="" />
-              </div>
-              <p>NBA Meets Art Continues To Take Basketball Beyond the Court</p>
-              <div class="overlay">
-                <p>view more</p>
-              </div>
-            </a>
-            <a
-              href="https://www.thisdaylive.com/2023/06/17/exxon-mobil-nba-africa-panafricare-tip-off-season-10-of-power-forward-in-nigeria/"
-              target="_blank"
-              class="major_campaign_item_card"
-            >
-              <div class="major_campaign_item_image">
-                <img src="./images/nba_third_news.jpg" alt="" />
-              </div>
-              <p>
-                Exxon Mobil, NBA Africa, PanAfricare Tip Off Season 10 of Power
-                Forward in Nigeria
-              </p>
-              <div class="overlay">
-                <p>view more</p>
-              </div>
-            </a>
-            <a
-              href="https://thenativemag.com/2024-nba-all-star-weekend/"
-              target="_blank"
-              class="major_campaign_item_card"
-            >
-              <div class="major_campaign_item_image">
-                <img src="./images/nba_fourth_news.png" alt="" />
-              </div>
-              <p>An African Takeover at the 2024 NBA All-Star Weekend</p>
-              <div class="overlay">
-                <p>view more</p>
-              </div>
-            </a>
-            <a
-              href="https://culturecustodian.com/celebrating-urban-culture-the-hennessy-x-nba-nigeria-watch-party-in-lagos/"
-              target="_blank"
-              class="major_campaign_item_card"
-            >
-              <div class="major_campaign_item_image">
-                <img src="./images/nba_fifth_news.webp" alt="" />
-              </div>
-              <p>
-                Celebrating Urban Culture: The Hennessy x NBA Nigeria Watch
-                Party In Lagos
-              </p>
-              <div class="overlay">
-                <p>view more</p>
-              </div>
-            </a>
-            <a
-              href="https://www.bellanaija.com/2023/10/hennessy-x-nba-pop-up/"
-              target="_blank"
-              class="major_campaign_item_card"
-            >
-              <div class="major_campaign_item_image">
-                <img src="./images/nba_sixth_news.jpg" alt="" />
-              </div>
-              <p>
-                From the Hoops to the Drinks, Catch up on the exclusive moments
-                of the Hennessy and NBA themed Pop-up Event
-              </p>
-              <div class="overlay">
-                <p>view more</p>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
+    <!-- Case Study Details -->
+    <main class="max-w-4xl mx-auto px-6 py-12 space-y-12">
+      <!-- Overview -->
+      <section>
+        <h3 class="text-2xl font-semibold mb-4">Overview</h3>
+        <p class="text-slate-700 leading-relaxed">
+          As the Marketing & Communications Lead for the NBA in Nigeria, I was
+          responsible for spearheading strategic initiatives that enhanced brand
+          engagement, digital growth, and cross-platform storytelling. My role
+          focused on increasing visibility and fan interaction for the NBA
+          All-Star 2023 campaign, managing digital and media partnerships, and
+          promoting NBA digital assets such as NBA ID.
+        </p>
+      </section>
 
-      <div class="contact_media_container" id="contact">
-        <h3 class="fade_in_up">Let's Connect</h3>
-        <h6 class="fade_in_up">
-          Open to global marketing leadership roles. Reach out if you're looking
-          for bold strategies and measurable growth.
-        </h6>
-        <div class="media_container fade_in_up">
-          <a href="mailto:toakinkunmi@gmail.com">
-            <i class="fa-regular fa-envelope"></i>
-            <p>toakinkunmi@gmail.com</p>
+      <!-- Strategy & Execution -->
+      <section>
+        <h3 class="text-2xl font-semibold mb-4">Strategy & Execution</h3>
+        <ul class="list-disc pl-5 space-y-2 text-slate-700">
+          <li>
+            Launched targeted acquisition campaigns across Instagram, Twitter,
+            and YouTube, resulting in dynamic storytelling and viral content
+            loops.
+          </li>
+          <li>
+            Partnered with local influencers and sports personalities to amplify
+            fan-driven content.
+          </li>
+          <li>
+            Developed a retention-focused CX plan centered on push
+            notifications, personalized email journeys, and in-app fan rewards.
+          </li>
+          <li>
+            Orchestrated high-impact brand activations at key events such as the
+            2023 NBA All-Star Weekend watch party.
+          </li>
+          <li>
+            Secured sponsorships with regional brands to extend campaign reach,
+            including collaborative merchandise drops and co-branded digital
+            content.
+          </li>
+          <li>
+            Deployed analytics dashboards to track campaign performance in
+            real-time.
+          </li>
+        </ul>
+      </section>
+
+      <!-- Tools -->
+      <section>
+        <h3 class="text-2xl font-semibold mb-4">Tools</h3>
+        <ul class="list-disc pl-5 space-y-2 text-slate-700">
+          <li>Hootsuite</li>
+          <li>Google Analytics</li>
+          <li>Adobe Creative Cloud</li>
+          <li>Sprinklr / native platform analytics</li>
+        </ul>
+      </section>
+
+      <!-- Results -->
+      <section>
+        <h3 class="text-2xl font-semibold mb-4">Results</h3>
+        <ul class="list-disc pl-5 space-y-2 text-slate-700">
+          <li>
+            50% increase in social media followers, driven by consistent content
+            cadence and influencer partnerships.
+          </li>
+          <li>
+            $2M estimated media value generated from the 2023 NBA All-Star
+            Campaign.
+          </li>
+          <li>
+            15% growth in engagement and viewership in Q1 2023 through CX and
+            content personalization strategies.
+          </li>
+          <li>
+            20% rise in media placements across local press and sports channels
+            through high-impact PR and brand activations.
+          </li>
+          <li>
+            15% increase in NBA ID digital subscriptions, with improved funnel
+            conversion post-campaign.
+          </li>
+        </ul>
+      </section>
+
+      <!-- Media/Press Links -->
+      <section>
+        <div class="grid md:grid-cols-3 gap-6">
+          <a
+            href="https://www.thisdaystyle.ng/nba-nigeria-collaborates-with-dennis-osadebe-for-the-2nd-edition-of-nba-meets-art/"
+            target="_blank"
+            class="group block relative rounded-xl overflow-hidden shadow hover:shadow-lg"
+          >
+            <img
+              src="./images/nba_first_news.jpg"
+              alt=""
+              class="w-full h-40 object-cover"
+            />
+            <div class="p-3 text-sm font-medium">
+              NBA Nigeria Collaborates With Dennis Osadebe for the 2nd Edition
+              of NBA Meets Art
+            </div>
+            <div
+              class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 flex items-center justify-center text-white text-xs uppercase"
+            >
+              View More
+            </div>
           </a>
-          <a>
-            <i class="fa-solid fa-phone"></i>
-            <p>+234-818-448-4565</p>
+
+          <a
+            href="https://www.zikoko.com/pop/nba-meets-art-continues-to-take-basketball-beyond-the-court/"
+            target="_blank"
+            class="group block relative rounded-xl overflow-hidden shadow hover:shadow-lg"
+          >
+            <img
+              src="./images/nba_second_news.jpg"
+              alt=""
+              class="w-full h-40 object-cover"
+            />
+            <div class="p-3 text-sm font-medium">
+              NBA Meets Art Continues To Take Basketball Beyond the Court
+            </div>
+            <div
+              class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 flex items-center justify-center text-white text-xs uppercase"
+            >
+              View More
+            </div>
+          </a>
+
+          <a
+            href="https://www.thisdaylive.com/2023/06/17/exxon-mobil-nba-africa-panafricare-tip-off-season-10-of-power-forward-in-nigeria/"
+            target="_blank"
+            class="group block relative rounded-xl overflow-hidden shadow hover:shadow-lg"
+          >
+            <img
+              src="./images/nba_third_news.jpg"
+              alt=""
+              class="w-full h-40 object-cover"
+            />
+            <div class="p-3 text-sm font-medium">
+              Exxon Mobil, NBA Africa, PanAfricare Tip Off Season 10 of Power
+              Forward in Nigeria
+            </div>
+            <div
+              class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 flex items-center justify-center text-white text-xs uppercase"
+            >
+              View More
+            </div>
+          </a>
+
+          <a
+            href="https://thenativemag.com/2024-nba-all-star-weekend/"
+            target="_blank"
+            class="group block relative rounded-xl overflow-hidden shadow hover:shadow-lg"
+          >
+            <img
+              src="./images/nba_fourth_news.png"
+              alt=""
+              class="w-full h-40 object-cover"
+            />
+            <div class="p-3 text-sm font-medium">
+              An African Takeover at the 2024 NBA All-Star Weekend
+            </div>
+            <div
+              class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 flex items-center justify-center text-white text-xs uppercase"
+            >
+              View More
+            </div>
+          </a>
+
+          <a
+            href="https://culturecustodian.com/celebrating-urban-culture-the-hennessy-x-nba-nigeria-watch-party-in-lagos/"
+            target="_blank"
+            class="group block relative rounded-xl overflow-hidden shadow hover:shadow-lg"
+          >
+            <img
+              src="./images/nba_fifth_news.webp"
+              alt=""
+              class="w-full h-40 object-cover"
+            />
+            <div class="p-3 text-sm font-medium">
+              Celebrating Urban Culture: The Hennessy x NBA Nigeria Watch Party
+              In Lagos
+            </div>
+            <div
+              class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 flex items-center justify-center text-white text-xs uppercase"
+            >
+              View More
+            </div>
+          </a>
+
+          <a
+            href="https://www.bellanaija.com/2023/10/hennessy-x-nba-pop-up/"
+            target="_blank"
+            class="group block relative rounded-xl overflow-hidden shadow hover:shadow-lg"
+          >
+            <img
+              src="./images/nba_sixth_news.jpg"
+              alt=""
+              class="w-full h-40 object-cover"
+            />
+            <div class="p-3 text-sm font-medium">
+              From the Hoops to the Drinks, Catch up on the exclusive moments of
+              the Hennessy and NBA themed Pop-up Event
+            </div>
+            <div
+              class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 flex items-center justify-center text-white text-xs uppercase"
+            >
+              View More
+            </div>
           </a>
         </div>
-        <h6 class="fade_in_up">You may also find me on these platforms!</h6>
-        <div class="contact_media_social_link fade_in_up">
-          <a href=""><i class="fa-brands fa-instagram"></i></a>
-          <a href=""><i class="fa-brands fa-twitter"></i></a>
-          <a href=""><i class="fa-brands fa-facebook"></i></a>
-          <a href="https://www.linkedin.com/in/tobiakinkunmi" target="_blank"
-            ><i class="fa-brands fa-linkedin"></i
-          ></a>
-        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="bg-slate-50 py-12 px-6 text-center space-y-6">
+      <h3 class="text-2xl font-semibold">Let's Connect</h3>
+      <p class="text-slate-700 max-w-xl mx-auto">
+        Open to global marketing leadership roles. Reach out if you're looking
+        for bold strategies and measurable growth.
+      </p>
+      <div class="flex justify-center gap-6 text-slate-700">
+        <a
+          href="mailto:toakinkunmi@gmail.com"
+          class="flex items-center gap-2 hover:text-blue-600"
+        >
+          <i class="fa-regular fa-envelope"></i>
+          <p>toakinkunmi@gmail.com</p>
+        </a>
+        <a
+          href="tel:+2348184484565"
+          class="flex items-center gap-2 hover:text-blue-600"
+        >
+          <i class="fa-solid fa-phone"></i>
+          <p>+234-818-448-4565</p>
+        </a>
       </div>
-    </div>
+      <p class="text-slate-600">You may also find me on these platforms!</p>
+      <div class="flex justify-center gap-6 text-lg text-slate-600">
+        <a href="#" class="hover:text-pink-600"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="#" class="hover:text-blue-400"
+          ><i class="fa-brands fa-twitter"></i
+        ></a>
+        <a href="#" class="hover:text-blue-600"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/tobiakinkunmi"
+          target="_blank"
+          class="hover:text-blue-700"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+      </div>
+    </footer>
 
     <script src="index.js"></script>
 

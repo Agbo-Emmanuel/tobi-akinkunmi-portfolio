@@ -1,324 +1,749 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tenor+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tobi Akinkunmi Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+      href="https://unpkg.com/lucide-static/font/lucide.css"
+      rel="stylesheet"
     />
-    <link rel="stylesheet" href="./index.css"/>
-    <title>Tobi Akinkunmi</title>
-</head>
-<body>
-    <div class="hero_container">
-        <div class="header_body" id="header">
-            <div class="header_logo_body">
-                <a href="#home" class="header_nav__link">Tobi Akinkunmi</a>
-            </div>
-            <div class="header_nav_container">
-                <!-- <a href="#home">HOME</a> -->
-                <a class="header_nav__link" href="#about">About</a>
-                <a class="header_nav__link" href="#core-competencies">Core Competencies</a>
-                <a class="header_nav__link" href="#projects">Projects</a>
-                <!-- <a class="header_nav__link" href="#work">Work</a> -->
-                <a class="header_nav__link" href="#contact">Contact</a>
-                <a href="./assets/TobiAkinkunmiResume.pdf" download="TobiAkinkunmiResume.pdf">
-                   <button id="header_nav_btn">Download Resume</button> 
-                </a>
-            </div>
-            <div class="menu_container" id="open"><i class="fa-solid fa-bars menu_icon"></i></div>
-            <div class="menu_container" id="close" style="display: none"><i class="fa-solid fa-xmark menu_icon"></i></div>
-            <div class="menu" id="menu">
-                <!-- <a id="home_link" href="#home">HOME</a> -->
-                <a class="close_link" href="#about">About</a>
-                <a class="close_link" href="#core-competencies">Core Competencies</a>
-                <a class="close_link" href="#projects">Projects</a>
-                <!-- <a class="close_link" href="#work">Work</a> -->
-                <a class="close_link" href="#contact">Contact</a>
-                <a class="close_link" href="./assets/TobiAkinkunmiResume.pdf" download="TobiAkinkunmiResume.pdf">Download Resume</a>
-            </div>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tenor+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+  </head>
+  <body class="min-h-screen w-full bg-white text-slate-900">
+    <!-- NAV -->
+    <header
+      class="sticky top-0 z-40 backdrop-blur bg-white/70 border-b border-slate-100"
+    >
+      <nav
+        class="mx-auto max-w-7xl px-6 py-4 flex items-center justify-between"
+      >
+        <a href="/index.html" class="flex items-center gap-3">
+          <div class="h-7 w-7 rounded-xl bg-[#000080]"></div>
+          <span class="font-semibold tracking-tight">Tobi Akinkunmi</span>
+        </a>
+        <ul class="hidden md:flex items-center gap-8 text-sm">
+          <li><a href="#about" class="hover:opacity-70">About</a></li>
+          <li><a href="#work" class="hover:opacity-70">Work</a></li>
+          <li>
+            <a href="#testimonials" class="hover:opacity-70">Testimonials</a>
+          </li>
+          <li><a href="#contact" class="hover:opacity-70">Contact</a></li>
+        </ul>
+        <div class="flex items-center gap-3">
+          <a
+            href="./assets/TobiAkinkunmiResume.pdf"
+            download="TobiAkinkunmiResume.pdf"
+            class="hidden sm:inline-block"
+          >
+            <button
+              class="bg-[#000080] text-white px-4 py-2 rounded-2xl hover:bg-blue-700"
+            >
+              Download Resume
+            </button>
+          </a>
+          <a href="#intro-video">
+            <button
+              class="border px-4 py-2 rounded-2xl flex items-center gap-2 hover:bg-slate-50"
+            >
+              <i data-lucide="play-circle" class="w-4 h-4"></i> Intro
+            </button>
+          </a>
         </div>
-    </div>
-    <div class="body_item">
-        <div class="hero_item_section" id="home">
-            <h2 class="fade_up">Tobi Akinkunmi</h2>
-            <h3>MULTI-CHANNEL MARKETING & COMMUNICATIONS STRATEGIST | GROWTH & BRAND ENGAGEMENT</h3>
-            <p class="fade_up">
-                Strategic and data-driven marketer with 8+ years of experience across finance, entertainment, and sports.
-                Proven success  in audience engagement, campaign leadership, and digital transformation to drive measurable business impact.
-            </p>
-            <div class="hero_item_button_container fade_up">
-                <a href="./assets/TobiAkinkunmiResume.pdf" download="TobiAkinkunmiResume.pdf">
-                    <button>Download Resume</button>
-                </a>
-                <a href="#contact">
-                    <button>Get in Touch</button>
-                </a>
-            </div>
-        </div>
+      </nav>
+    </header>
 
-        <div class="about_section" id="about">
-            <div class="about_text_container fade_in_left">
-                <h1>About Me</h1>
-                <p>
-                    I'm passionate about turning data and creativity into high-perfoming marketing campaigns. With over eight years of experience.
-                    I've led transformative projects at NBA, Universal Music Group, GTBank, and Lickquor. I specialize in brand storytelling,
-                    digital and multi-channel growth. My goal? Craft narratives that move audiences-and results that move the bottom line.
+    <!-- HERO -->
+    <section class="relative overflow-hidden">
+      <div
+        class="absolute inset-0 bg-gradient-to-b from-[#000080b3] to-[#000000cc]"
+      ></div>
+
+      <div
+        class="relative mx-auto max-w-7xl px-6 py-20 lg:py-28 grid lg:grid-cols-2 gap-12 items-center"
+      >
+        <div>
+          <h1
+            class="text-4xl text-white md:text-5xl font-semibold leading-tight"
+          >
+            Multichannel Marketing & Communications Strategist
+          </h1>
+          <p
+            class="mt-5 text-lg text-white leading-relaxed text-slate-700 max-w-xl"
+          >
+            Driving growth through strategic storytelling, cross-market
+            campaigns, and premium brand experiences across finance, sports, and
+            entertainment.
+          </p>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <span
+              class="rounded-xl px-3 py-1 border bg-white border-slate-200 text-slate-700"
+              >Strategic Event Planning</span
+            >
+            <span
+              class="rounded-xl px-3 py-1 border bg-white border-slate-200 text-slate-700"
+              >Integrated Campaigns</span
+            >
+            <span
+              class="rounded-xl px-3 py-1 border bg-white border-slate-200 text-slate-700"
+              >Corporate Communications</span
+            >
+            <span
+              class="rounded-xl px-3 py-1 border bg-white border-slate-200 text-slate-700"
+              >Stakeholder Engagement</span
+            >
+            <span
+              class="rounded-xl px-3 py-1 border bg-white border-slate-200 text-slate-700"
+              >Brand Strategy & Identity</span
+            >
+          </div>
+          <div class="mt-8 flex flex-wrap gap-4">
+            <a href="#work"
+              ><button
+                class="bg-blue-600 text-white px-6 py-3 rounded-2xl flex items-center gap-2 hover:bg-blue-700"
+              >
+                Explore Case Studies
+                <i class="lucide-arrow-right w-4 h-4"></i></button
+            ></a>
+            <a href="#about"
+              ><button
+                class="border text-white px-6 py-3 rounded-2xl hover:bg-slate-50"
+              >
+                About Me
+              </button></a
+            >
+          </div>
+        </div>
+        <div class="relative">
+          <div
+            class="h-[500px] aspect-[4/5] w-full rounded-3xl bg-gradient-to-b from-white to-slate-50 border border-slate-100 shadow overflow-hidden"
+          >
+            <img
+              src="./images/about.png"
+              alt=""
+              class="w-full h-full object-contain"
+            />
+            <!-- <div
+              class="h-40 bg-gradient-to-tr from-blue-600 to-amber-400"
+            ></div>
+            <div class="p-6">
+              <div
+                class="h-56 w-full rounded-2xl bg-gradient-to-tr from-amber-200 via-white to-blue-200 border border-slate-100"
+              ></div>
+              <div class="mt-4">
+                <h3 class="font-semibold">Tobi Akinkunmi</h3>
+                <p class="text-sm text-slate-600">
+                  Growth & Brand Engagement Manager
                 </p>
-                <p><i>#IdeasWithoutLimits</i></p>
-            </div>
-            <divc class="about_image fade_in_right">
-                <img src="./images/about.png" alt=""/>
-            </div>
+              </div>
+              <div class="mt-4 grid grid-cols-3 gap-3 text-xs">
+                <div class="flex items-center gap-2">
+                  <div class="h-6 w-6 rounded-lg border bg-white"></div>
+                  <span class="text-slate-600">Bright Base</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <div class="h-6 w-6 rounded-lg border bg-blue-600"></div>
+                  <span class="text-slate-600">Electric Blue</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <div class="h-6 w-6 rounded-lg border bg-amber-400"></div>
+                  <span class="text-slate-600">Soft Gold</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <div class="h-6 w-6 rounded-lg border bg-slate-900"></div>
+                  <span class="text-slate-600">Slate</span>
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTRO VIDEO + SCRIPT -->
+    <section id="intro-video" class="mx-auto max-w-7xl px-6 py-16">
+      <div class="grid lg:grid-cols-2 gap-10">
+        <div class="h-[500px] rounded-3xl border border-slate-200 p-6">
+          <img
+            src="./images/carousel_image_eleven.jpg"
+            alt=""
+            class="w-full h-full object-cover rounded-[inherit]"
+          />
+          <!-- <h3 class="text-xl font-semibold">Meet Tobi — Intro Video</h3>
+          <p class="text-sm text-slate-600">90 seconds · Premium & concise</p>
+          <div
+            class="mt-4 aspect-video w-full rounded-2xl bg-gradient-to-tr from-blue-100 via-white to-amber-100 border border-slate-200 flex items-center justify-center"
+          >
+            <i class="lucide-play-circle w-14 h-14"></i>
+          </div> -->
+        </div>
+        <div class="rounded-3xl border border-slate-200 p-6">
+          <!-- <h3 class="text-xl font-semibold">Suggested Script</h3> -->
+          <div class="prose prose-slate text-sm">
+            <p>
+              Hi, I’m <strong>Tobi Akinkunmi</strong>. For over eight years,
+              I’ve worked at the intersection of marketing, communications, and
+              event strategy.
+            </p>
+            <p>
+              My journey spans global stages at the
+              <strong>NBA</strong> and <strong>Universal Music Group</strong> to
+              launching <strong>Lickquor</strong>.
+            </p>
+            <p>
+              What sets me apart is the bridge between
+              <strong>strategy and execution</strong> — blending creativity,
+              data, and storytelling to elevate brand presence.
+            </p>
+            <p>
+              If you’re seeking premium brand engagement with
+              <strong>clear ROI</strong>, let’s connect.
+            </p>
+          </div>
+          <div class="mt-4">
+            <a href="#contact"
+              ><button
+                class="bg-[#000080] text-white px-4 py-2 rounded-2xl hover:bg-blue-700"
+              >
+                Contact
+              </button></a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="relative py-20">
+      <!-- Background Image -->
+      <div
+        class="absolute inset-0 bg-[url('./images/carousel_image_four.jpg')] bg-cover bg-center"
+      ></div>
+      <!-- Dark Gradient Overlay -->
+      <div class="absolute inset-0 bg-black/70"></div>
+
+      <!-- Content -->
+      <div
+        class="relative mx-auto max-w-7xl px-6 grid lg:grid-cols-2 gap-10 items-center text-white"
+      >
+        <!-- Left Content -->
+        <div>
+          <h2 class="text-3xl font-semibold">About Me</h2>
+          <p class="mt-4 text-gray-200 leading-relaxed">
+            Marketing & Communications professional with 8+ years delivering
+            cross‑market campaigns and stakeholder‑led events across finance,
+            sports, and entertainment. Adept at multi‑country execution, vendor
+            orchestration, and strategic communications aligned to brand and
+            commercial outcomes.
+          </p>
+
+          <!-- <ul class="grid sm:grid-cols-2 gap-3 mt-4 list-disc pl-5">
+            <li>Strategic Event Planning & end‑to‑end delivery</li>
+            <li>
+              Integrated Marketing (digital, ATL/BTL, influencer, sponsorships)
+            </li>
+            <li>Corporate Communications & media relations</li>
+            <li>Stakeholder engagement & executive alignment</li>
+            <li>Brand strategy, positioning, and storytelling</li>
+            <li>Sponsorship acquisition & partnership management</li>
+            <li>Customer acquisition/retention and lifecycle design</li>
+            <li>Budget oversight & ROI analysis</li>
+          </ul> -->
+
+          <!-- Tags -->
+          <div class="mt-6 flex flex-wrap gap-2">
+            <span
+              class="rounded-xl px-3 py-1 border border-white/30 bg-white/10"
+            >
+              Strategic Event Planning
+            </span>
+            <span
+              class="rounded-xl px-3 py-1 border border-white/30 bg-white/10"
+            >
+              Integrated Campaigns
+            </span>
+            <span
+              class="rounded-xl px-3 py-1 border border-white/30 bg-white/10"
+            >
+              Brand Strategy
+            </span>
+            <span
+              class="rounded-xl px-3 py-1 border border-white/30 bg-white/10"
+            >
+              Corporate Communications
+            </span>
+            <span
+              class="rounded-xl px-3 py-1 border border-white/30 bg-white/10"
+            >
+              media relations
+            </span>
+            <span
+              class="rounded-xl px-3 py-1 border border-white/30 bg-white/10"
+            >
+              Stakeholder engagement
+            </span>
+            <span
+              class="rounded-xl px-3 py-1 border border-white/30 bg-white/10"
+            >
+              executive alignment
+            </span>
+            <span
+              class="rounded-xl px-3 py-1 border border-white/30 bg-white/10"
+            >
+              Sponsorships
+            </span>
+            <span
+              class="rounded-xl px-3 py-1 border border-white/30 bg-white/10"
+            >
+              Customer acquisition/retention
+            </span>
+            <span
+              class="rounded-xl px-3 py-1 border border-white/30 bg-white/10"
+            >
+              Budget oversight
+            </span>
+            <span
+              class="rounded-xl px-3 py-1 border border-white/30 bg-white/10"
+            >
+              ROI analysis
+            </span>
+            <span
+              class="rounded-xl px-3 py-1 border border-white/30 bg-white/10"
+            >
+              lifecycle design
+            </span>
+          </div>
+
+          <!-- Buttons -->
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a href="https://www.linkedin.com/in/tobiakinkunmi" target="_blank">
+              <button
+                class="border border-white/30 px-4 py-2 rounded-2xl flex items-center gap-2 hover:bg-white/10"
+              >
+                <i class="lucide-linkedin w-4 h-4"></i> LinkedIn
+              </button>
+            </a>
+            <a
+              href="https://thecommsavenue.com/the-comms-spotlight-tobi-akinkunmi-marketing-and-communications-manager-universal-music-group-nigeria/"
+              target="_blank"
+            >
+              <button
+                class="border border-white/30 px-4 py-2 rounded-2xl flex items-center gap-2 hover:bg-white/10"
+              >
+                <i class="lucide-external-link w-4 h-4"></i> Feature
+              </button>
+            </a>
+            <a
+              href="./assets/TobiAkinkunmiResume.pdf"
+              download="TobiAkinkunmiResume.pdf"
+            >
+              <button
+                class="bg-blue-600 text-white px-4 py-2 rounded-2xl flex items-center gap-2 hover:bg-blue-700"
+              >
+                <i class="lucide-file-down w-4 h-4"></i> Download Resume
+              </button>
+            </a>
+          </div>
         </div>
 
-        <div class="core_competence_section" id="core-competencies">
-            <h1 class="fade_in_up">Core Competencies</h1>
-            <div class="core_competence_card_container">
-                <div class="core_competence_card fade_in_up">
-                    <p>Strategic Marketing & Brand Positioning</p>
-                </div>
-                <div class="core_competence_card fade_in_up">
-                    <p>Audience Growth & Customer Retention</p>
-                </div>
-                <div class="core_competence_card fade_in_up">
-                    <p>Digital & Content Strategy</p>
-                </div>
-                <div class="core_competence_card fade_in_up">
-                    <p>Stakeholder & Media Relations</p>
-                </div>
-                <div class="core_competence_card fade_in_up">
-                    <p>Multi-Channel Campaign Execution</p>
-                </div>
-                <div class="core_competence_card fade_in_up">
-                    <p>Sponsorship & Partnership Management</p>
-                </div>
-                <div class="core_competence_card fade_in_up">
-                    <p>Data-Driven Decision Making</p>
-                </div>
-                <div class="core_competence_card fade_in_up">
-                    <p>Project & Team Leadership</p>
-                </div>
-                <div class="core_competence_card fade_in_up">
-                    <p>Budget Optimisation and ROI Analysis</p>
-                </div>
+        <!-- Right Content -->
+        <div
+          class="rounded-3xl bg-white/10 backdrop-blur-sm border border-white/20 p-6 shadow-lg"
+        >
+          <h3 class="font-semibold text-white">Professional Snapshot</h3>
+          <div class="grid sm:grid-cols-3 gap-4 mt-4">
+            <div class="rounded-2xl border border-white/20 p-4 bg-white/10">
+              <div class="text-2xl font-semibold text-white">5+</div>
+              <div class="text-xs text-gray-300">Markets Coordinated</div>
             </div>
+            <div class="rounded-2xl border border-white/20 p-4 bg-white/10">
+              <div class="text-2xl font-semibold text-white">25M+</div>
+              <div class="text-xs text-gray-300">Campaign Streams</div>
+            </div>
+            <div class="rounded-2xl border border-white/20 p-4 bg-white/10">
+              <div class="text-2xl font-semibold text-white">$2M+</div>
+              <div class="text-xs text-gray-300">Earned Media</div>
+            </div>
+            <div class="rounded-2xl border border-white/20 p-4 bg-white/10">
+              <div class="text-2xl font-semibold text-white">₦42M+</div>
+              <div class="text-xs text-gray-300">Sponsorship Raised</div>
+            </div>
+            <div class="rounded-2xl border border-white/20 p-4 bg-white/10">
+              <div class="text-2xl font-semibold text-white">₦200M+</div>
+              <div class="text-xs text-gray-300">Revenue Launched</div>
+            </div>
+            <div class="rounded-2xl border border-white/20 p-4 bg-white/10">
+              <div class="text-2xl font-semibold text-white">20+</div>
+              <div class="text-xs text-gray-300">Major Events</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section id="work" class="mx-auto max-w-7xl px-6 py-16">
+      <div class="mb-8 text-center">
+        <div class="text-amber-600 tracking-widest uppercase text-xs mb-2">
+          Work
+        </div>
+        <h2 class="text-3xl md:text-4xl font-bold text-slate-900">
+          Featured Case Studies
+        </h2>
+        <p class="text-slate-600 mt-2 max-w-2xl mx-auto">
+          Click any project to open the full case study with Objective,
+          Strategy, Execution, Tools, and Results.
+        </p>
+      </div>
+      <div class="grid md:grid-cols-2 gap-6">
+        <!-- NBA All-Star -->
+        <div
+          class="group overflow-hidden rounded-2xl border border-zinc-200 shadow-sm hover:shadow-md transition"
+        >
+          <div class="aspect-[16/9] bg-zinc-100 relative">
+            <!-- Cover placeholder -->
+            <div
+              class="absolute inset-0 flex items-center justify-center"
+              style="
+                background: linear-gradient(
+                    rgba(0, 0, 0, 0.6),
+                    rgba(0, 0, 0, 1)
+                  ),
+                  url('./images/nba_logo.jpg') center/cover no-repeat;
+              "
+            ></div>
+          </div>
+          <div class="p-4">
+            <div
+              class="flex items-center justify-between text-lg font-semibold"
+            >
+              <span>NBA All-Star 2023 — Regional Influencer Campaign</span>
+              <span class="bg-amber-600 text-white text-xs px-2 py-1 rounded"
+                >2023</span
+              >
+            </div>
+            <p class="text-slate-600 mt-2">
+              8-country rollout delivering 50% audience growth and $2M+ earned
+              media in one week.
+            </p>
+            <div class="mt-4 flex items-center gap-2 text-blue-600">
+              <span><a href="./nba.html">View Full Case Study</a></span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-4 w-4"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                />
+              </svg>
+            </div>
+          </div>
         </div>
 
-        <div class="featured_projects_section" id="projects">
-            <h1>Featured Projects</h1>
-            <div class="projects_card_container">
-                <div class="projects_card fade_in_up">
-                    <div class="projects_card_top">
-                        <img src="./images/nba_logo.jpg" alt=""/>
-                        <h3>NBA All-Star Influencer Campaign 2023</h3>
-                    </div>
-                    <ul class="project_list">
-                        <li>Drove 50% growth in social media following within one week</li>
-                        <li>Generated $2M in estimated media value</li>
-                    </ul>
-                    <a href="./nba.html">See more</a>
-                </div>
-                <div class="projects_card fade_in_up">
-                    <div class="projects_card_top">
-                        <img src="./images/lickquor_logo.jpg" alt=""/>
-                        <h3>Lickquor On-Demand Alcohol Platform</h3>
-                    </div>
-                    <ul class="project_list">
-                        <li>Generated $200k+ in gross revenue in 18 months</li>
-                        <li>Achieved 5,000+ orders and 16% increase in conversion rate</li>
-                    </ul>
-                    <a href="./lickquor.html">See more</a>
-                </div>
-                <div class="projects_card fade_in_up">
-                    <div class="projects_card_top">
-                        <img src="./images/umg_logo.jpg" alt=""/>
-                        <h3>Universal Music Artist Rollouts</h3>
-                    </div>
-                    <ul class="project_list">
-                        <li>20M+ streams for Tekno's album; 5M+ streams for Peaches Remix</li>
-                        <li>160k+ ad clicks and global artist visibility</li>
-                    </ul>
-                </div>
-                <div class="projects_card fade_in_up">
-                    <div class="projects_card_top">
-                        <img src="./images/gtbank_logo.jpg" alt=""/>
-                        <h3>GTBank Fashion Weekend 2019</h3>
-                    </div>
-                    <ul class="project_list">
-                        <li>8M+ impressions and 500k+ engagements via social media</li>
-                        <li>15% YoY increase in event attendance</li>
-                    </ul>
-                </div>
+        <!-- Lickquor -->
+        <div
+          class="group overflow-hidden rounded-2xl border border-zinc-200 shadow-sm hover:shadow-md transition"
+        >
+          <div class="aspect-[16/9] bg-zinc-100 relative">
+            <div
+              class="absolute inset-0 flex items-center justify-center"
+              style="
+                background: linear-gradient(
+                    rgba(0, 0, 0, 0.6),
+                    rgba(0, 0, 0, 1)
+                  ),
+                  url('./images/lickquor_logo.jpg') center/cover no-repeat;
+              "
+            ></div>
+          </div>
+          <div class="p-4">
+            <div
+              class="flex items-center justify-between text-lg font-semibold"
+            >
+              <span>Lickquor — Nigeria’s First On-Demand Alcohol Platform</span>
+              <span class="bg-amber-600 text-white text-xs px-2 py-1 rounded"
+                >2024</span
+              >
             </div>
+            <p class="text-slate-600 mt-2">
+              Full-funnel launch to ₦200M+ revenue and 5,000+ verified orders in
+              18 months.
+            </p>
+            <div class="mt-4 flex items-center gap-2 text-blue-600">
+              <span><a href="./lickquor.html">View Full Case Study</a></span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-4 w-4"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                />
+              </svg>
+            </div>
+          </div>
         </div>
 
-        <div class="image_carousel_body">
-            <div class="swiper project_image_carousel_section">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <img src="./images/carousel_image_one.jpg" alt="" />
-                    <div class="image_carousel_tag_container">
-                        <p>#Shoot For GTFashion Show 2019</p>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./images/carousel_image_two.jpg" alt="" />
-                    <div class="image_carousel_tag_container">
-                        <p>#Basketball Without Borders 2023</p>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./images/carousel_image_three.jpg" alt="" />
-                    <div class="image_carousel_tag_container">
-                        <p>#NBA x Hennessy Pop-up 2023</p>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./images/carousel_image_four.jpg" alt="" />
-                    <div class="image_carousel_tag_container">
-                        <p>#Universal Music Nigeria</p>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./images/carousel_image_five.jpg" alt="" />
-                    <div class="image_carousel_tag_container">
-                        <p>#Global Citizen DJZ West Africa Promo Tour</p>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./images/carousel_image_six.jpg" alt="" />
-                    <div class="image_carousel_tag_container">
-                        <p>#PrinceOfZamunda</p>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./images/carousel_image_seven.jpg" alt="" />
-                    <div class="image_carousel_tag_container">
-                        <p>#Major League DJZ West Africa Promo Tour</p>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./images/carousel_image_eight.jpg" alt="" />
-                    <div class="image_carousel_tag_container">
-                        <p>#Global Citizen DJZ West Africa Promo Tour</p>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./images/carousel_image_nine.jpg" alt="" />
-                    <div class="image_carousel_tag_container">
-                        <p>#NBA All Star Weekend 2024</p>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./images/carousel_image_ten.jpg" alt="" />
-                    <div class="image_carousel_tag_container">
-                        <p>#BAL In Lagos</p>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./images/carousel_image_eleven.jpg" alt="" />
-                    <div class="image_carousel_tag_container">
-                        <p>#NBA x Hennessy Pop-up 2023</p>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./images/carousel_image_twelve.jpg" alt="" />
-                    <div class="image_carousel_tag_container">
-                        <p>#GTBANK Fashion Weekend</p>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./images/carousel_image_13.jpg" alt="" />
-                    <div class="image_carousel_tag_container">
-                        <p>#AFD</p>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./images/carousel_image_14.jpg" alt="" />
-                    <div class="image_carousel_tag_container">
-                        <p>#NBA Meets Art</p>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./images/carousel_image_15.jpg" alt="" />
-                    <div class="image_carousel_tag_container">
-                        <p>#NBA Meets Art</p>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./images/carousel_image_16.png" alt="" />
-                    <div class="image_carousel_tag_container">
-                        <p>#Peaches Remix</p>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./images/carousel_image_17.jpg" alt="" />
-                    <div class="image_carousel_tag_container">
-                        <p>#Universal Music Nigeria</p>
-                    </div>
-                  </div>
-                </div>
-            
-                <!-- Pagination -->
-                <div class="swiper-pagination"></div>
+        <!-- UMG Rollouts -->
+        <div
+          class="group overflow-hidden rounded-2xl border border-zinc-200 shadow-sm hover:shadow-md transition"
+        >
+          <div class="aspect-[16/9] bg-zinc-100 relative">
+            <div
+              class="absolute inset-0 flex items-center justify-center"
+              style="
+                background: linear-gradient(
+                    rgba(0, 0, 0, 0.6),
+                    rgba(0, 0, 0, 1)
+                  ),
+                  url('./images/universal_music_group_logo.png') center/cover
+                    no-repeat;
+              "
+            ></div>
+          </div>
+          <div class="p-4">
+            <div
+              class="flex items-center justify-between text-lg font-semibold"
+            >
+              <span
+                >Universal Music — Artist Rollouts (Tekno, Peaches Remix)</span
+              >
+              <span class="bg-amber-600 text-white text-xs px-2 py-1 rounded"
+                >2020–2021</span
+              >
             </div>
-            <!-- Navigation buttons -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+            <p class="text-slate-600 mt-2">
+              25M+ total streams and 160k ad clicks via multi-market campaigns.
+            </p>
+            <div class="mt-4 flex items-center gap-2 text-blue-600">
+              <span><a href="./umg.html">View Full Case Study</a></span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-4 w-4"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                />
+              </svg>
+            </div>
+          </div>
         </div>
 
-        <div class="contact_media_container" id="contact">
-            <h3 class="fade_in_up">Let's Connect</h3>
-            <h6 class="fade_in_up">Open to global marketing leadership roles. Reach out if you're looking  for bold strategies and measurable growth.</h6>
-            <div class="media_container fade_in_up">
-                <a href="mailto:toakinkunmi@gmail.com">
-                    <i class="fa-regular fa-envelope"></i>
-                    <p>toakinkunmi@gmail.com</p>
-                </a>
-                <a>
-                    <i class="fa-solid fa-phone"></i>
-                    <p>+234-818-448-4565</p>
-                </a>
+        <!-- GTBank Fashion Weekend -->
+        <div
+          class="group overflow-hidden rounded-2xl border border-zinc-200 shadow-sm hover:shadow-md transition"
+        >
+          <div class="aspect-[16/9] bg-zinc-100 relative">
+            <div
+              class="absolute inset-0 flex items-center justify-center"
+              style="
+                background: linear-gradient(
+                    rgba(0, 0, 0, 0.6),
+                    rgba(0, 0, 0, 1)
+                  ),
+                  url('./images/gt_bank_logo.png') center/cover no-repeat;
+              "
+            ></div>
+          </div>
+          <div class="p-4">
+            <div
+              class="flex items-center justify-between text-lg font-semibold"
+            >
+              <span>GTBank Fashion Weekend — Digital Engagement Engine</span>
+              <span class="bg-amber-600 text-white text-xs px-2 py-1 rounded"
+                >2019</span
+              >
             </div>
-            <h6 class="fade_in_up">You may also find me on these platforms!</h6>
-            <div class="contact_media_social_link fade_in_up">
-                <a href=""><i class="fa-brands fa-instagram"></i></a>
-                <a href=""><i class="fa-brands fa-twitter"></i></a>
-                <a href=""><i class="fa-brands fa-facebook"></i></a>
-                <a href="https://www.linkedin.com/in/tobiakinkunmi" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <p class="text-slate-600 mt-2">
+              40% YoY engagement growth and record turnout via content +
+              influencer matrix.
+            </p>
+            <div class="mt-4 flex items-center gap-2 text-blue-600">
+              <span><a href="./gtbank.html">View Full Case Study</a></span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-4 w-4"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                />
+              </svg>
             </div>
+          </div>
         </div>
-    </div>
+      </div>
+    </section>
 
-    <script src="index.js"></script>
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="mx-auto max-w-7xl px-6 py-16">
+      <h2 class="text-3xl font-semibold">Testimonials</h2>
+      <div class="mt-8 grid md:grid-cols-3 gap-6">
+        <div class="rounded-3xl border p-6">
+          <i class="lucide-quote w-6 h-6"></i>
+          <p class="mt-3 text-slate-800">
+            Tobi brings structure and creativity in equal measure.
+          </p>
+          <div class="mt-4 text-sm text-slate-600">
+            <div class="font-semibold">Senior Comms Lead</div>
+            <div>Global Sports Brand</div>
+          </div>
+        </div>
+        <div class="rounded-3xl border p-6">
+          <i class="lucide-quote w-6 h-6"></i>
+          <p class="mt-3 text-slate-800">
+            From partner negotiations to on-ground logistics, he delivers calmly
+            under pressure.
+          </p>
+          <div class="mt-4 text-sm text-slate-600">
+            <div class="font-semibold">Head of Partnerships</div>
+            <div>Media & Events Group</div>
+          </div>
+        </div>
+        <div class="rounded-3xl border p-6">
+          <i class="lucide-quote w-6 h-6"></i>
+          <p class="mt-3 text-slate-800">
+            Premium taste level. Smart with budgets. Always focused on metrics.
+          </p>
+          <div class="mt-4 text-sm text-slate-600">
+            <div class="font-semibold">Marketing Director</div>
+            <div>Consumer Tech Platform</div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <section id="contact" class="py-20 bg-white">
+      <div class="mx-auto max-w-6xl px-4">
+        <div class="max-w-3xl">
+          <div class="text-xs tracking-[0.2em] uppercase text-gray-500 mb-2">
+            Connect
+            <!-- {kicker} -->
+          </div>
+          <h2
+            class="text-xl md:text-2xl font-semibold text-gray-900 leading-tight"
+          >
+            <!-- {title} -->
+            For any inquiries or professional collaborations, please feel free
+            to contact me directly via WhatsApp or Email.
+          </h2>
+          <!-- <p class="mt-3 text-gray-600">
+            Prefer WhatsApp or email? Those work too.
+          </p> -->
+        </div>
+        <div class="mt-10 grid md:grid-cols-2 gap-8">
+          <div class="rounded-2xl p-6 ring-1 ring-black/5 shadow-sm">
+            <h3 class="text-lg font-semibold">Quick Links</h3>
+            <div class="mt-3 flex flex-wrap gap-3">
+              <!-- <a
+                href=""
+                target="_blank"
+                class="px-4 py-2.5 rounded-xl font-semibold"
+                style="background: navy; color: ivory"
+              >
+                Book on Calendly
+              </a> -->
+              <a
+                href="https://wa.me/2348184484565"
+                target="_blank"
+                class="px-4 py-2.5 rounded-xl border border-gray-300 hover:bg-gray-50 font-semibold"
+                style="background: navy; color: ivory"
+              >
+                WhatsApp
+              </a>
+              <a
+                href="mailto:toakinkunmi@gmail.com"
+                target="_blank"
+                class="px-4 py-2.5 rounded-xl border border-gray-300 hover:bg-gray-50 font-semibold"
+              >
+                Email
+              </a>
+            </div>
+            <div class="mt-6 text-sm text-gray-600">
+              Or connect via
+              <a
+                class="underline decoration-dotted"
+                href="https://www.linkedin.com/in/tobiakinkunmi"
+                target="_blank"
+                >LinkedIn</a
+              >.
+            </div>
+          </div>
+          <div
+            class="h-[500px] bg-[#E6E6E6] rounded-2xl p-2 ring-1 ring-black/5 shadow-sm overflow-hidden"
+          >
+            <img
+              src="./images/about.png"
+              alt=""
+              class="w-full h-full object-contain"
+            />
+            <!-- {/* Replace with your scheduling embed (Calendly/HubSpot/etc.) */} -->
+            <!-- <iframe
+              title="Scheduling"
+              src="https://calendly.com/"
+              class="w-full h-[420px]"
+            >
+            </iframe> -->
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <!-- Swiper Initialization -->
+    <footer class="border-t border-slate-100">
+      <div
+        class="mx-auto max-w-7xl px-6 py-8 text-sm text-slate-600 flex flex-wrap items-center justify-between gap-4"
+      >
+        <div>© 2025 Tobi Akinkunmi. All rights reserved.</div>
+        <div class="flex items-center gap-4">
+          <a href="#about" class="hover:opacity-70">About</a>
+          <a href="#work" class="hover:opacity-70">Work</a>
+          <a href="#testimonials" class="hover:opacity-70">Testimonials</a>
+          <a href="#contact" class="hover:opacity-70">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- </CardContent> -->
+    <!-- </Card> -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
     <script>
-      const swiper = new Swiper(".swiper", {
-        loop: true,
-        autoplay: {
-          delay: 2500,
-          disableOnInteraction: false,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        grabCursor: true,
-      });
+      lucide.createIcons();
     </script>
-
-</body>
+  </body>
 </html>
